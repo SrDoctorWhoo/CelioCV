@@ -15,9 +15,9 @@ export function SpotlightCard({
     const el = ref.current;
     if (!el) return;
 
-    const r = el.getBoundingClientRect();
-    const x = e.clientX - r.left;
-    const y = e.clientY - r.top;
+    const rect = el.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
 
     el.style.setProperty("--x", `${x}px`);
     el.style.setProperty("--y", `${y}px`);
@@ -29,11 +29,12 @@ export function SpotlightCard({
       onMouseMove={onMove}
       className={`relative overflow-hidden ${className}`}
     >
+      {/* Spotlight */}
       <div
         className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-200 group-hover:opacity-100"
         style={{
           background:
-            "radial-gradient(600px circle at var(--x) var(--y), rgba(16,185,129,0.14), transparent 45%)",
+            "radial-gradient(600px circle at var(--x, 50%) var(--y, 50%), rgba(16,185,129,0.14), transparent 45%)",
         }}
       />
       {children}

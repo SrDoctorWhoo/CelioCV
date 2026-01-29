@@ -2,20 +2,20 @@ import { Reveal } from "@/components/motion";
 
 const groups = [
   {
-    title: "dados & bi",
-    skills: ["sql", "power bi", "modelagem", "kpis", "etl"],
+    title: "Dados & BI",
+    skills: ["SQL", "Power BI", "Modelagem de Dados", "KPIs", "ETL"],
   },
   {
-    title: "automação & sistemas",
-    skills: ["power automate", "power apps", "node.js", "php/laravel", "apis"],
+    title: "Automação & Sistemas",
+    skills: ["Power Automate", "Power Apps", "Node.js", "PHP / Laravel", "APIs"],
   },
   {
-    title: "infra",
-    skills: ["aws", "linux", "deploy", "monitoramento", "segurança/firewall"],
+    title: "Infraestrutura",
+    skills: ["AWS", "Linux", "Deploy", "Monitoramento", "Segurança / Firewall"],
   },
   {
-    title: "erp",
-    skills: ["sankhya", "regras de negócio", "procedures", "integrações"],
+    title: "ERP",
+    skills: ["Sankhya", "Regras de Negócio", "Procedures", "Integrações"],
   },
 ];
 
@@ -23,8 +23,8 @@ export function Skills() {
   return (
     <section id="skills" className="py-12">
       <div className="flex items-end justify-between gap-4">
-        <h2 className="section-title">skills</h2>
-        <p className="text-sm text-zinc-400">uso diário / avançado</p>
+        <h2 className="section-title">Skills</h2>
+        <p className="text-sm text-zinc-400">Uso Diário / Nível Avançado</p>
       </div>
 
       <div className="mt-6 grid gap-4 md:grid-cols-2">

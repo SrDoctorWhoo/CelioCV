@@ -15,10 +15,14 @@ export function Reveal({
   return (
     <motion.div
       className={className}
-      initial={{ opacity: 0, y: 14, filter: "blur(6px)" }}
+      initial={{ opacity: 0, y: 16, filter: "blur(6px)" }}
       whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
       viewport={{ once: true, amount: 0.25 }}
-      transition={{ duration: 0.55, ease: "easeOut", delay }}
+      transition={{
+        duration: 0.55,
+        ease: [0.22, 1, 0.36, 1], // easeOut mais natural
+        delay,
+      }}
     >
       {children}
     </motion.div>
@@ -37,7 +41,12 @@ export function HoverLift({
       className={className}
       whileHover={{ y: -4 }}
       whileTap={{ scale: 0.98 }}
-      transition={{ type: "spring", stiffness: 450, damping: 30 }}
+      transition={{
+        type: "spring",
+        stiffness: 420,
+        damping: 28,
+        mass: 0.6,
+      }}
     >
       {children}
     </motion.div>

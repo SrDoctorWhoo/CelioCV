@@ -8,81 +8,81 @@ import { ProjectModal, type Project } from "@/components/project-modal";
 
 const projects: Project[] = [
   {
-    title: "dashboards executivos (bi)",
-    desc: "painéis com indicadores, filtros e visão executiva. foco em decisão rápida.",
-    tags: ["power bi", "sql", "kpis"],
-    result: "reduz tempo de análise e aumenta rastreabilidade.",
+    title: "Dashboards Executivos (BI)",
+    desc: "Painéis com indicadores, filtros e visão executiva. Foco em decisão rápida e confiável.",
+    tags: ["Power BI", "SQL", "KPIs"],
+    result: "Reduz o tempo de análise e aumenta a rastreabilidade das informações.",
     link: null,
     details: [
-      "levantamento de requisitos com as áreas",
-      "modelagem de dados e criação de medidas/kpis",
-      "layout executivo + filtros por contexto",
-      "publicação e governança (acesso e manutenção)",
+      "Levantamento de requisitos com as áreas",
+      "Modelagem de dados e criação de medidas/KPIs",
+      "Layout executivo com filtros por contexto",
+      "Publicação e governança (acesso e manutenção)",
     ],
   },
   {
-    title: "automações office 365",
-    desc: "rotinas para reduzir retrabalho: aprovações, alertas, integrações e logs.",
-    tags: ["power automate", "power apps", "office 365"],
-    result: "processos mais rápidos com menos erro humano.",
+    title: "Automações no Office 365",
+    desc: "Rotinas para reduzir retrabalho: aprovações, alertas, integrações e logs.",
+    tags: ["Power Automate", "Power Apps", "Office 365"],
+    result: "Processos mais rápidos, com menos erro humano e mais controle.",
     link: null,
     details: [
-      "desenho do fluxo e validações",
-      "registro de logs e auditoria básica",
-      "notificações e aprovações",
-      "integração com planilhas / listas / formulários",
+      "Desenho do fluxo e validações",
+      "Registro de logs e auditoria básica",
+      "Notificações e aprovações",
+      "Integração com planilhas, listas e formulários",
     ],
   },
   {
-    title: "integrações & bots whatsapp",
-    desc: "funil conversacional, fallback humano, captura de lead e pedidos.",
-    tags: ["node", "venom/wppconnect", "api"],
-    result: "atendimento escalável e rastreável.",
+    title: "Integrações & Bots no WhatsApp",
+    desc: "Funil conversacional, handoff para humano, captura de leads e geração de pedidos.",
+    tags: ["Node.js", "Venom/WPPConnect", "API"],
+    result: "Atendimento escalável, organizado e rastreável.",
     link: null,
     details: [
-      "menu e intenções (funil guiado)",
-      "handoff para humano quando necessário",
-      "registro de leads/pedidos",
-      "integração com sistema/painel",
+      "Menu e intenções (funil guiado)",
+      "Handoff para atendimento humano quando necessário",
+      "Registro de leads e pedidos",
+      "Integração com sistema/painel",
     ],
   },
   {
-    title: "erp / sankhya: regras e automações",
-    desc: "procedures, queries e processos para automatizar rotinas e compliance.",
-    tags: ["sql server", "erp", "regras de negócio"],
-    result: "menos retrabalho e mais controle.",
+    title: "ERP (Sankhya): Regras & Automações",
+    desc: "Procedures, queries e processos para automatizar rotinas e reforçar compliance.",
+    tags: ["SQL Server", "ERP", "Regras de Negócio"],
+    result: "Menos retrabalho, mais controle e previsibilidade na operação.",
     link: null,
     details: [
-      "regras de negócio em procedures/consultas",
-      "automação de rotinas e conferências",
-      "relatórios de validação e rastreio",
-      "apoio a operação com melhoria contínua",
+      "Regras de negócio em procedures e consultas",
+      "Automação de rotinas e conferências",
+      "Relatórios de validação e rastreio",
+      "Apoio à operação com melhoria contínua",
     ],
   },
   {
-    title: "infra & deploy",
-    desc: "deploy, monitoramento e base de infraestrutura para apps e dashboards.",
-    tags: ["aws", "linux", "monitoramento"],
-    result: "mais estabilidade e previsibilidade.",
+    title: "Infraestrutura & Deploy",
+    desc: "Deploy, monitoramento e base de infraestrutura para aplicações e dashboards.",
+    tags: ["AWS", "Linux", "Monitoramento"],
+    result: "Mais estabilidade, segurança e previsibilidade em produção.",
     link: null,
     details: [
-      "deploy e configuração de ambiente",
-      "monitoramento básico e alertas",
-      "boas práticas de segurança",
-      "documentação do ambiente",
+      "Deploy e configuração de ambiente",
+      "Monitoramento básico e alertas",
+      "Boas práticas de segurança",
+      "Documentação do ambiente",
     ],
   },
   {
-    title: "sites e sistemas web",
-    desc: "sites rápidos e sistemas com login/painel, focados em conversão e operação.",
-    tags: ["laravel", "react", "mysql"],
-    result: "presença profissional e pipeline de lead.",
+    title: "Sites & Sistemas Web",
+    desc: "Sites rápidos e sistemas com login/painel, focados em conversão e operação.",
+    tags: ["Laravel", "React", "MySQL"],
+    result: "Presença profissional e pipeline de leads mais consistente.",
     link: null,
     details: [
-      "layout moderno e responsivo",
-      "painel admin e cadastros",
-      "integrações (whatsapp/email)",
-      "seo básico e performance",
+      "Layout moderno e responsivo",
+      "Painel administrativo e cadastros",
+      "Integrações (WhatsApp/E-mail)",
+      "SEO básico e performance",
     ],
   },
 ];
@@ -121,9 +121,9 @@ export function Projects() {
   return (
     <section id="projetos" className="py-12">
       <div className="flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
-        <h2 className="section-title">projetos</h2>
+        <h2 className="section-title">Projetos</h2>
         <p className="text-sm text-zinc-400">
-          clique em um card pra ver o case
+          Clique em um card para ver o case
         </p>
       </div>
 
@@ -155,16 +155,16 @@ export function Projects() {
                   </div>
 
                   <p className="mt-4 text-sm text-zinc-200">
-                    <span className="text-zinc-400">resultado:</span> {p.result}
+                    <span className="text-zinc-400">Resultado:</span> {p.result}
                   </p>
 
                   {p.link ? (
                     <div className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-emerald-300">
-                      ver link <ExternalLink size={16} />
+                      Ver Link <ExternalLink size={16} />
                     </div>
                   ) : (
                     <p className="mt-4 text-xs text-zinc-500">
-                      abrir case →
+                      Abrir Case →
                     </p>
                   )}
                 </SpotlightCard>

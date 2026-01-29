@@ -1,8 +1,8 @@
 const links = [
-  { href: "#projetos", label: "projetos" },
-  { href: "#experiencia", label: "experiência" },
-  { href: "#skills", label: "skills" },
-  { href: "#contato", label: "contato" },
+  { href: "#projetos", label: "Projetos" },
+  { href: "#experiencia", label: "Experiência" },
+  { href: "#skills", label: "Skills" },
+  { href: "#contato", label: "Contato" },
 ];
 
 export function Navbar() {
@@ -12,7 +12,7 @@ export function Navbar() {
         <a href="#" className="flex items-center gap-2">
           <span className="h-2 w-2 rounded-full bg-emerald-400" />
           <span className="text-sm font-semibold tracking-wide text-zinc-100">
-            célio veloso
+            Célio Veloso
           </span>
         </a>
 
@@ -21,7 +21,7 @@ export function Navbar() {
             <a
               key={l.href}
               href={l.href}
-              className="text-sm text-zinc-300 hover:text-zinc-100"
+              className="text-sm text-zinc-300 transition-colors hover:text-zinc-100"
             >
               {l.label}
             </a>
@@ -29,7 +29,7 @@ export function Navbar() {
         </nav>
 
         <a href="#contato" className="btn">
-          falar comigo
+          Falar Comigo
         </a>
       </div>
     </div>

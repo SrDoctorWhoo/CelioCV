@@ -2,10 +2,10 @@ import { Mail, MessageCircle, Github, Linkedin, ArrowRight } from "lucide-react"
 import { Reveal, HoverLift } from "@/components/motion";
 
 const CONTACT = {
-  email: "seuemail@dominio.com",
-  whatsapp: "5562999999999",
-  linkedin: "https://www.linkedin.com/",
-  github: "https://github.com/",
+  email: "celioveloso.dev@gmail.com",
+  whatsapp: "5561981643467",
+  linkedin: "https://www.linkedin.com/in/celioveloso",
+  github: "https://github.com/celioveloso",
 };
 
 function ContactCard({
@@ -56,45 +56,47 @@ export function Contact() {
         <div className="card p-6 md:p-8">
           <h2 className="section-title">contato</h2>
           <p className="mt-2 text-zinc-300">
-            me chama e descreve o problema. eu respondo com caminho, prazo e solução.
+            entre em contato, explique o contexto do seu problema ou ideia.
+            eu retorno com diagnóstico técnico, prazo estimado e a melhor solução possível.
           </p>
 
           <div className="mt-6 grid gap-4 md:grid-cols-2">
             <ContactCard
               title="whatsapp"
-              value={CONTACT.whatsapp}
-              desc="resposta rápida e direta"
-              href={`https://wa.me/${CONTACT.whatsapp}?text=oi%20c%C3%A9lio!%20vi%20seu%20portf%C3%B3lio%20e%20quero%20falar%20sobre%20um%20projeto.`}
+              value="+55 61 98164-3467"
+              desc="canal mais rápido para conversas diretas e alinhamentos iniciais"
+              href={`https://wa.me/${CONTACT.whatsapp}?text=oi%20c%C3%A9lio!%20vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20falar%20sobre%20um%20projeto.`}
               icon={<MessageCircle size={18} className="text-emerald-300" />}
             />
 
             <ContactCard
               title="email"
               value={CONTACT.email}
-              desc="pra propostas e docs"
+              desc="ideal para propostas formais, documentos e detalhes técnicos"
               href={`mailto:${CONTACT.email}`}
               icon={<Mail size={18} className="text-emerald-300" />}
             />
 
             <ContactCard
               title="linkedin"
-              value="abrir perfil"
-              desc="histórico e networking"
+              value="ver perfil profissional"
+              desc="experiência, histórico profissional e networking"
               href={CONTACT.linkedin}
               icon={<Linkedin size={18} className="text-emerald-300" />}
             />
 
             <ContactCard
               title="github"
-              value="ver repositórios"
-              desc="código e projetos"
+              value="explorar repositórios"
+              desc="projetos, código-fonte e soluções em produção"
               href={CONTACT.github}
               icon={<Github size={18} className="text-emerald-300" />}
             />
           </div>
 
           <p className="mt-6 text-xs text-zinc-500">
-            se quiser, eu adiciono: modal de case (detalhes do projeto), botão “baixar cv em pdf” e página “serviços”.
+            extensões disponíveis sob demanda: página de serviços, estudos de caso detalhados,
+            botão para download do currículo em pdf e modais explicativos de projetos.
           </p>
         </div>
       </Reveal>

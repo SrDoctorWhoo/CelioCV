@@ -39,13 +39,13 @@ export function ProjectModal({
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
         >
-          {/* backdrop */}
+          {/* Backdrop */}
           <div
             className="absolute inset-0 bg-black/70 backdrop-blur-sm"
             onClick={onClose}
           />
 
-          {/* modal */}
+          {/* Modal */}
           <motion.div
             className="relative w-full max-w-2xl rounded-3xl border border-zinc-800 bg-zinc-950 p-6 shadow-2xl"
             initial={{ opacity: 0, y: 16, scale: 0.98 }}
@@ -56,12 +56,12 @@ export function ProjectModal({
             <button
               onClick={onClose}
               className="absolute right-4 top-4 grid h-10 w-10 place-items-center rounded-full border border-zinc-800 bg-zinc-900/40 text-zinc-200 hover:border-zinc-600"
-              aria-label="fechar"
+              aria-label="Fechar Modal"
             >
               <X size={18} />
             </button>
 
-            <p className="text-xs text-zinc-500">case</p>
+            <p className="text-xs text-zinc-500">Case</p>
             <h3 className="mt-2 text-2xl font-semibold text-zinc-100">
               {project.title}
             </h3>
@@ -77,14 +77,14 @@ export function ProjectModal({
 
             <div className="mt-5 rounded-2xl border border-zinc-800 bg-zinc-900/20 p-4">
               <p className="text-sm text-zinc-200">
-                <span className="text-zinc-400">resultado:</span> {project.result}
+                <span className="text-zinc-400">Resultado:</span> {project.result}
               </p>
             </div>
 
             {project.details?.length ? (
               <div className="mt-5">
                 <p className="text-sm font-semibold text-zinc-200">
-                  o que foi feito
+                  O Que Foi Feito
                 </p>
                 <ul className="mt-2 space-y-2 text-sm text-zinc-300">
                   {project.details.map((d) => (
@@ -104,11 +104,11 @@ export function ProjectModal({
                 rel="noreferrer"
                 className="btn mt-6 inline-flex"
               >
-                ver link <ExternalLink size={16} />
+                Ver Link <ExternalLink size={16} />
               </a>
             ) : (
               <p className="mt-6 text-xs text-zinc-500">
-                case privado / link sob demanda
+                Case Privado • Link Sob Demanda
               </p>
             )}
           </motion.div>
