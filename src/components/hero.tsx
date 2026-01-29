@@ -10,7 +10,7 @@ const PROFILE = {
     "Transformo dados e processos em decisões e automações que economizam tempo, reduzem retrabalho e aumentam o controle.",
   location: "Goiânia • Brasil",
   linkedin: "https://www.linkedin.com/in/celioveloso",
-  github: "https://github.com/celioveloso",
+  github: "https://github.com/SrDoctorWhoo",
   whatsapp: "5561981643467",
 };
 
