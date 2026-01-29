@@ -1,15 +1,14 @@
 const links = [
-  { href: "#projetos", label: "Projetos" },
-  { href: "#experiencia", label: "Experiência" },
-  { href: "#skills", label: "Skills" },
-  { href: "#contato", label: "Contato" },
+  { href: "/#projetos", label: "Projetos" },
+  { href: "/#servicos", label: "Serviços" },
+  { href: "/cv", label: "Currículo" },
 ];
 
 export function Navbar() {
   return (
     <div className="sticky top-0 z-50 border-b border-zinc-800/60 bg-zinc-950/60 backdrop-blur-xl">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:px-6">
-        <a href="#" className="flex items-center gap-2">
+        <a href="/" className="flex items-center gap-2">
           <span className="h-2 w-2 rounded-full bg-emerald-400" />
           <span className="text-sm font-semibold tracking-wide text-zinc-100">
             Célio Veloso
@@ -28,8 +27,8 @@ export function Navbar() {
           ))}
         </nav>
 
-        <a href="#contato" className="btn">
-          Falar Comigo
+        <a href="/#contato" className="btn">
+          contratar
         </a>
       </div>
     </div>
