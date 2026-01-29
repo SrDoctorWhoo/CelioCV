@@ -11,7 +11,7 @@ export default function Page() {
   return (
     <main>
       <Navbar />
-      <div className="mx-auto max-w-6xl px-4">
+      <div className="mx-auto max-w-6xl px-4 md:px-6">
         <Hero />
         <Highlights />
         <Projects />
