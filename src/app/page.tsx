@@ -5,27 +5,28 @@ import { Services } from "@/components/services";
 import { Process } from "@/components/process";
 import { Testimonials } from "@/components/testimonials";
 import { CTA } from "@/components/cta";
-import { Skills } from "@/components/skills";
 import { Experience } from "@/components/experience";
+import { Skills } from "@/components/skills";
 import { Contact } from "@/components/contact";
 
 export default function Home() {
   return (
     <>
+      {/* HERO pode ficar full */}
       <Hero />
-      <Highlights />
 
-      {/* AQUI COMEÇAM OS BLOCOS NOVOS */}
-      <Services />
-      <Projects />
-      <Process />
-      <Testimonials />
-      <CTA />
-
-      {/* SEÇÕES QUE JÁ EXISTIAM */}
-      <Experience />
-      <Skills />
-      <Contact />
+      {/* CONTAINER GLOBAL */}
+      <div className="mx-auto max-w-6xl px-4 md:px-6">
+        <Highlights />
+        <Services />
+        <Projects />
+        <Process />
+        <Testimonials />
+        <CTA />
+        <Experience />
+        <Skills />
+        <Contact />
+      </div>
     </>
   );
 }
