@@ -1,4 +1,6 @@
 import "./globals.css";
+import { FloatingCTA } from "@/components/floating-cta";
+
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -12,6 +14,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="pt-br">
       <body className="min-h-screen bg-zinc-950 text-zinc-100 antialiased">
         {children}
+  <FloatingCTA />
       </body>
     </html>
   );
