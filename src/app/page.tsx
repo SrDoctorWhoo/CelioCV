@@ -8,12 +8,15 @@ import { CTA } from "@/components/cta";
 import { Experience } from "@/components/experience";
 import { Skills } from "@/components/skills";
 import { Contact } from "@/components/contact";
+import { Navbar } from "@/components/navbar";
+
 
 export default function Home() {
   return (
     <>
       {/* HERO pode ficar full */}
       <div className="mx-auto max-w-6xl px-4 md:px-6">
+      <Navbar />
       <Hero /></div>
 
       {/* CONTAINER GLOBAL */}
