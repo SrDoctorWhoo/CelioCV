@@ -2,7 +2,7 @@ import { Mail, MessageCircle, Github, Linkedin, ArrowRight } from "lucide-react"
 import { Reveal, HoverLift } from "@/components/motion";
 
 const CONTACT = {
-  email: "celioveloso.dev@gmail.com",
+  email: "velosocelio22@gmail.com",
   whatsapp: "5561981643467",
   linkedin: "https://www.linkedin.com/in/celioveloso",
   github: "https://github.com/celioveloso",
