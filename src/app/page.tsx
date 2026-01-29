@@ -13,7 +13,8 @@ export default function Home() {
   return (
     <>
       {/* HERO pode ficar full */}
-      <Hero />
+      <div className="mx-auto max-w-6xl px-4 md:px-6">
+      <Hero /></div>
 
       {/* CONTAINER GLOBAL */}
       <div className="mx-auto max-w-6xl px-4 md:px-6">
